@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陶艺制作过程 - 湛江陶艺</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>湛江陶艺</h1>
+                <p>非遗传承</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="3d-model.html">3D模型展示</a></li>
+                <li><a href="making-process.html" class="active">陶艺制作</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+                <li><a href="gallery.html">作品画廊</a></li>
+                <li><a href="chat-agent.html">智能聊天</a></li>
+                <li><a href="features.html">功能介绍</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 标题区 -->
+    <section class="process-title">
+        <div class="container">
+            <h2>陶艺制作过程</h2>
+            <p>体验湛江陶艺的传统制作工艺，亲手创造属于你的陶艺作品</p>
+        </div>
+    </section>
+
+    <!-- 制作步骤区 -->
+    <section class="making-process" id="process-section">
+        <div class="container">
+            <!-- 步骤导航 -->
+            <div class="steps-nav">
+                <div class="step-nav-item active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-name">准备材料</span>
+                </div>
+                <div class="step-nav-item" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-name">拉坯成型</span>
+                </div>
+                <div class="step-nav-item" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-name">修坯装饰</span>
+                </div>
+                <div class="step-nav-item" data-step="4">
+                    <span class="step-number">4</span>
+                    <span class="step-name">上釉烧制</span>
+                </div>
+                <div class="step-nav-item" data-step="5">
+                    <span class="step-number">5</span>
+                    <span class="step-name">完成作品</span>
+                </div>
+            </div>
+
+            <!-- 步骤内容 -->
+            <div class="steps-content">
+                <!-- 步骤1: 准备材料 -->
+                <div class="step-content active" id="step-1">
+                    <h3>步骤 1: 准备材料</h3>
+                    <div class="step-content-wrapper">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="准备材料">
+                        </div>
+                        <div class="step-description">
+                            <p>制作陶艺的第一步是准备好所需的材料和工具。湛江陶艺使用的主要材料是当地特有的优质陶土，经过筛选和处理后才能使用。</p>
+                            <h4>所需材料：</h4>
+                            <ul>
+                                <li>优质陶土</li>
+                                <li>水</li>
+                                <li>陶轮</li>
+                                <li>修坯工具</li>
+                                <li>颜料和釉料</li>
+                                <li>烧制窑炉</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 3D模型和输入区 -->
+                    <div class="step-3d-input">
+                        <div class="3d-preview">
+                            <iframe id="model-1" src="黑板擦.html" style="width:100%; height:300px; border:none;"></iframe>
+                            <h4>材料3D预览</h4>
+                        </div>
+                        
+                        <div class="step-input">
+                            <h4>选择陶土类型</h4>
+                            <select id="clay-type-1" class="step-select">
+                                <option value="red">红陶土</option>
+                                <option value="white">白陶土</option>
+                                <option value="stoneware">炻器陶土</option>
+                                <option value="porcelain">瓷土</option>
+                            </select>
+                            
+                            <h4>选择陶土湿度</h4>
+                            <select id="clay-moisture-1" class="step-select">
+                                <option value="dry">干燥</option>
+                                <option value="medium" selected>适中</option>
+                                <option value="wet">湿润</option>
+                            </select>
+                            
+                            <button id="save-btn-1" class="save-step-btn" data-step="1">保存此步骤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤2: 拉坯成型 -->
+                <div class="step-content" id="step-2">
+                    <h3>步骤 2: 拉坯成型</h3>
+                    <div class="step-content-wrapper">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="拉坯成型">
+                        </div>
+                        <div class="step-description">
+                            <p>拉坯是陶艺制作中最关键的步骤之一。将陶土放在陶轮上，通过手工拉制出基本的形状。这需要一定的技巧和经验，才能制作出均匀、美观的坯体。</p>
+                            <p>在这个步骤中，你可以选择想要制作的陶艺形状。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-3d-input">
+                        <div class="3d-preview">
+                            <iframe id="model-2" src="黑板擦.html" style="width:100%; height:300px; border:none;"></iframe>
+                            <h4>成型3D预览</h4>
+                        </div>
+                        
+                        <div class="step-input">
+                            <h4>选择基本形状</h4>
+                            <select id="shape-2" class="step-select">
+                                <option value="vase" selected>花瓶</option>
+                                <option value="bowl">碗</option>
+                                <option value="cup">杯子</option>
+                                <option value="plate">盘子</option>
+                                <option value="pot">罐子</option>
+                            </select>
+                            
+                            <h4>选择高度</h4>
+                            <input type="range" id="height-2" class="step-slider" min="1" max="5" value="2.5" step="0.1">
+                            <span id="height-value-2" class="slider-value">2.5</span>
+                            
+                            <h4>选择直径</h4>
+                            <input type="range" id="diameter-2" class="step-slider" min="0.5" max="3" value="1.5" step="0.1">
+                            <span id="diameter-value-2" class="slider-value">1.5</span>
+                            
+                            <button id="save-btn-2" class="save-step-btn" data-step="2">保存此步骤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤3: 修坯装饰 -->
+                <div class="step-content" id="step-3">
+                    <h3>步骤 3: 修坯装饰</h3>
+                    <div class="step-content-wrapper">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1533539112934-2060c827d486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="修坯装饰">
+                        </div>
+                        <div class="step-description">
+                            <p>修坯是对拉制好的坯体进行修整，使其更加光滑和规整。然后可以在坯体上进行装饰，如雕刻、绘画等。</p>
+                            <p>湛江陶艺的装饰风格独特，常常采用当地的民间图案和符号，具有浓厚的地方特色。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-3d-input">
+                        <div class="3d-preview">
+                            <iframe id="model-3" src="黑板擦.html" style="width:100%; height:300px; border:none;"></iframe>
+                            <h4>装饰3D预览</h4>
+                        </div>
+                        
+                        <div class="step-input">
+                            <h4>选择装饰风格</h4>
+                            <select id="decoration-3" class="step-select">
+                                <option value="traditional">传统图案</option>
+                                <option value="modern">现代简约</option>
+                                <option value="natural">自然纹理</option>
+                                <option value="custom">自定义</option>
+                            </select>
+                            
+                            <h4>选择纹理类型</h4>
+                            <div class="radio-group">
+                                <label><input type="radio" name="texture-3" value="smooth" checked> 光滑</label>
+                                <label><input type="radio" name="texture-3" value="carved"> 雕刻</label>
+                                <label><input type="radio" name="texture-3" value="scratched"> 划痕</label>
+                                <label><input type="radio" name="texture-3" value="imprinted"> 印花</label>
+                            </div>
+                            
+                            <h4>添加图案</h4>
+                            <select id="pattern-3" class="step-select">
+                                <option value="none">无</option>
+                                <option value="floral">花卉</option>
+                                <option value="geometric">几何</option>
+                                <option value="animal">动物</option>
+                                <option value="abstract">抽象</option>
+                            </select>
+                            
+                            <button id="save-btn-3" class="save-step-btn" data-step="3">保存此步骤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤4: 上釉烧制 -->
+                <div class="step-content" id="step-4">
+                    <h3>步骤 4: 上釉烧制</h3>
+                    <div class="step-content-wrapper">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1546436277-327bf12667a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="上釉烧制">
+                        </div>
+                        <div class="step-description">
+                            <p>上釉是为坯体涂上一层釉料，增加光泽和保护作用。然后将坯体放入窑炉中烧制，温度高达1200℃以上。</p>
+                            <p>烧制过程中，釉料会发生化学反应，形成各种美丽的颜色和纹理。这是湛江陶艺作品色彩鲜艳、持久的秘密所在。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-3d-input">
+                        <div class="3d-preview">
+                            <iframe id="model-4" src="黑板擦.html" style="width:100%; height:300px; border:none;"></iframe>
+                            <h4>上釉3D预览</h4>
+                        </div>
+                        
+                        <div class="step-input">
+                            <h4>选择釉料颜色</h4>
+                            <div class="color-options">
+                                <button class="color-btn" data-color="#8b5a2b" style="background-color:#8b5a2b;"></button>
+                                <button class="color-btn" data-color="#d2b48c" style="background-color:#d2b48c;"></button>
+                                <button class="color-btn active" data-color="#a0522d" style="background-color:#a0522d;"></button>
+                                <button class="color-btn" data-color="#cd853f" style="background-color:#cd853f;"></button>
+                                <button class="color-btn" data-color="#deb887" style="background-color:#deb887;"></button>
+                                <button class="color-btn" data-color="#808000" style="background-color:#808000;"></button>
+                                <button class="color-btn" data-color="#4682b4" style="background-color:#4682b4;"></button>
+                                <button class="color-btn" data-color="#2e8b57" style="background-color:#2e8b57;"></button>
+                                <button class="color-btn" data-color="#b22222" style="background-color:#b22222;"></button>
+                            </div>
+                            <input type="hidden" id="color-4" value="#a0522d">
+                            
+                            <h4>选择釉料类型</h4>
+                            <select id="glaze-4" class="step-select">
+                                <option value="transparent">透明釉</option>
+                                <option value="opaque" selected>不透明釉</option>
+                                <option value="matte">哑光釉</option>
+                                <option value="glossy">光泽釉</option>
+                            </select>
+                            
+                            <h4>选择烧制温度</h4>
+                            <select id="temperature-4" class="step-select">
+                                <option value="low">低温 (800-1000℃)</option>
+                                <option value="medium" selected>中温 (1100-1200℃)</option>
+                                <option value="high">高温 (1200-1300℃)</option>
+                            </select>
+                            
+                            <button id="save-btn-4" class="save-step-btn" data-step="4">保存此步骤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤5: 完成作品 -->
+                <div class="step-content" id="step-5">
+                    <h3>步骤 5: 完成作品</h3>
+                    <div class="step-content-wrapper">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1511103534499-4511804c7a90?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="完成作品">
+                        </div>
+                        <div class="step-description">
+                            <p>经过烧制后，一件完整的湛江陶艺作品就完成了。每件作品都是独一无二的，蕴含着工匠的心血和智慧。</p>
+                            <p>现在，让我们来创建属于你自己的陶艺作品吧！</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 最终3D预览 -->
+                    <div class="final-3d">
+                        <h4>你的最终作品预览</h4>
+                        <div class="final-model-container">
+                            <iframe id="final-model" src="黑板擦.html" style="width:100%; height:400px; border:none;"></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品总结 -->
+                    <div class="work-summary">
+                        <h4>作品制作总结</h4>
+                        <div class="summary-list">
+                            <div class="summary-item">
+                                <strong>步骤1：材料准备</strong>
+                                <span id="summary-1">等待输入...</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>步骤2：拉坯成型</strong>
+                                <span id="summary-2">等待输入...</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>步骤3：修坯装饰</strong>
+                                <span id="summary-3">等待输入...</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>步骤4：上釉烧制</strong>
+                                <span id="summary-4">等待输入...</span>
+                            </div>
+                        </div>
+                        
+                        <div class="final-actions">
+                            <button id="save-work" class="final-btn save-btn">保存作品</button>
+                            <button id="reset-work" class="final-btn reset-btn">重新制作</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我的作品 -->
+    <section class="my-works">
+        <div class="container">
+            <h2>我的作品</h2>
+            <p>查看您之前制作的陶艺作品</p>
+            <div class="works-grid" id="works-grid">
+                <div class="no-works">
+                    <p>您还没有保存任何作品</p>
+                    <p>完成陶艺制作过程后，点击"保存作品"按钮来保存您的创作</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 南粤匠心--3d数字驱动下的湛江非遗陶艺传承. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
