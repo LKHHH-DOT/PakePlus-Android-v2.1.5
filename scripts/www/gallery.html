@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陶艺作品画廊 - 南粤匠心</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>湛江陶艺</h1>
+                <p>非遗传承</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="3d-model.html">3D模型展示</a></li>
+                <li><a href="making-process.html">陶艺制作</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+                <li><a href="gallery.html" class="active">作品画廊</a></li>
+                <li><a href="chat-agent.html">智能聊天</a></li>
+                <li><a href="features.html">功能介绍</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section class="hero">
+        <div class="tech-overlay"></div>
+        <div class="container">
+            <h2>陶艺作品画廊</h2>
+            <p>欣赏湛江陶艺的精美作品，感受千年文化的魅力</p>
+        </div>
+    </section>
+
+    <!-- 作品分类 -->
+    <section class="gallery-categories">
+        <div class="container">
+            <h3>作品分类</h3>
+            <div class="categories-grid">
+                <div class="category-item" data-category="traditional">
+                    <div class="category-icon">🏺</div>
+                    <h4>传统器皿</h4>
+                    <p>碗、盘、罐、瓶等日常生活用品</p>
+                </div>
+                <div class="category-item" data-category="decorative">
+                    <div class="category-icon">🎨</div>
+                    <h4>艺术装饰</h4>
+                    <p>具有艺术价值的装饰性陶艺作品</p>
+                </div>
+                <div class="category-item" data-category="sculpture">
+                    <div class="category-icon">🗿</div>
+                    <h4>雕塑作品</h4>
+                    <p>人物、动物等立体雕塑作品</p>
+                </div>
+                <div class="category-item" data-category="modern">
+                    <div class="category-icon">✨</div>
+                    <h4>现代创新</h4>
+                    <p>融合现代设计理念的创新作品</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 画廊内容 -->
+    <section class="gallery">
+        <div class="container">
+            <h3 id="category-title">所有作品</h3>
+            <div class="gallery-grid">
+                <!-- 传统器皿作品 -->
+                <div class="gallery-item" data-category="traditional">
+                    <div class="gallery-image">
+                        <img src="https://imgs.699pic.com/images/600/708/618.jpg!detail.v1" alt="传统花瓶">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>传统花瓶</h4>
+                                <p>采用传统工艺制作的精美花瓶，花纹细腻，色彩典雅</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="traditional">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="传统陶罐">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>传统陶罐</h4>
+                                <p>采用古老烧制方法制作的传统陶罐，具有历史韵味</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="traditional">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1546436836-502fa427226c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="手工茶杯">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>手工茶杯</h4>
+                                <p>手工拉坯制作的茶杯，手感温润，适合品茗</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 艺术装饰作品 -->
+                <div class="gallery-item" data-category="decorative">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1582791694925-8644a2d66d0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="装饰盘子">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>装饰盘子</h4>
+                                <p>精美的装饰盘子，采用传统釉上彩工艺</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="decorative">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1511103534499-4511804c7a90?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="装饰花瓶">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>装饰花瓶</h4>
+                                <p>具有艺术装饰性的花瓶，造型独特</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 雕塑作品 -->
+                <div class="gallery-item" data-category="sculpture">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1593024825769-52224a799854?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="雕塑作品">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>雕塑作品</h4>
+                                <p>充满艺术感的陶艺雕塑，展现匠人精湛技艺</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="sculpture">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="动物雕塑">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>动物雕塑</h4>
+                                <p>栩栩如生的动物陶艺雕塑</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 现代创新作品 -->
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="现代陶艺">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>现代陶艺</h4>
+                                <p>融合现代设计理念的陶艺作品，风格独特</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="现代创意陶艺">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>现代创意陶艺</h4>
+                                <p>突破传统的现代创意陶艺作品</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 南粤匠心--3d数字驱动下的湛江非遗陶艺传承. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Coze聊天SDK -->
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+    <script>
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7585550236161064996',
+        },
+        componentProps: {
+          title: 'Coze',
+        },
+        auth: {
+          type: 'token',
+          token: 'pat_jZCBnds2Bvt8troPDdHlPls5mCCw1Tj981PWjUWq2AQRGN7G11KWRepx5gS0egpU',
+          onRefreshToken: function () {
+            return 'pat_jZCBnds2Bvt8troPDdHlPls5mCCw1Tj981PWjUWq2AQRGN7G11KWRepx5gS0egpU'
+          }
+        }
+      });
+    </script>
+</body>
+</html>
