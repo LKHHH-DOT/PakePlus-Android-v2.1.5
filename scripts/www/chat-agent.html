@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能陶艺助手</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>数字陶艺工坊</h1>
+                <p>非遗传承 · 数字创新</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="features.html">功能介绍</a></li>
+                <li><a href="making-process.html">制作过程</a></li>
+                <li><a href="3d-model.html">3D模型</a></li>
+                <li><a href="gallery.html">作品展示</a></li>
+                <li><a href="chat-agent.html" class="active">智能助手</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <section class="chat-agent-section">
+        <div class="container">
+            <h2>智能陶艺助手</h2>
+            <p>与AI陶艺大师对话，获取专业指导和建议</p>
+            
+            <div class="chat-container">
+                <iframe id="chat-iframe" srcdoc="
+                    <!DOCTYPE html>
+                    <html lang='zh-CN'>
+                    <head>
+                        <meta charset='UTF-8'>
+                        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                        <title>智能体交流</title>
+                        <style>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                margin: 0;
+                                padding: 0;
+                                height: 100vh;
+                                overflow: hidden;
+                                font-family: 'Microsoft YaHei', Arial, sans-serif;
+                            }
+                            
+                            /* 隐藏默认的启动器，因为我们在iframe中使用全屏模式 */
+                            [class*='launcher'] {
+                                display: none !important;
+                            }
+                            
+                            /* 确保聊天容器完全填充，避免不对称 */
+                            #chat-container {
+                                width: 100% !important;
+                                height: 100% !important;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                                overflow: hidden !important;
+                            }
+                            
+                            /* 确保Coze聊天组件容器完全对称 */
+                            [data-coze-chat-container] {
+                                width: 100% !important;
+                                height: 100% !important;
+                                max-height: 100% !important;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                                overflow: hidden !important;
+                                box-sizing: border-box !important;
+                            }
+                            
+                            /* 确保聊天内容区域对称 */
+                            .coze-chat-content {
+                                width: 100% !important;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                                box-sizing: border-box !important;
+                            }
+                            
+                            /* 确保聊天消息区域对称 */
+                            [data-coze-chat-messages] {
+                                width: 100% !important;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                                box-sizing: border-box !important;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div id='chat-container' style='width: 100%; height: 100%;'></div>
+                        <script src='https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js'></script>
+                        <script>
+                            new CozeWebSDK.WebChatClient({
+                                config: {
+                                    bot_id: '7585550236161064996',
+                                    container: document.getElementById('chat-container')
+                                },
+                                componentProps: {
+                                    title: '湛江陶艺智能助手',
+                                    mode: 'embed',
+                                    width: '100%',
+                                    height: '100%',
+                                    theme: {
+                                        primaryColor: '#6b4423',
+                                        backgroundColor: '#ffffff',
+                                        textColor: '#333333'
+                                    },
+                                    launcher: {
+                                        visible: false
+                                    },
+                                    showHeader: true,
+                                    showCloseButton: false
+                                },
+                                auth: {
+                                    type: 'token',
+                                    token: 'pat_jZCBnds2Bvt8troPDdHlPls5mCCw1Tj981PWjUWq2AQRGN7G11KWRepx5gS0egpU',
+                                    onRefreshToken: function () {
+                                        return 'pat_jZCBnds2Bvt8troPDdHlPls5mCCw1Tj981PWjUWq2AQRGN7G11KWRepx5gS0egpU'
+                                    }
+                                }
+                            });
+                        </script>
+                    </body>
+                    </html>
+                "></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 数字陶艺工坊. 保留所有权利.</p>
+        </div>
+    </footer>
+</body>
+</html>
