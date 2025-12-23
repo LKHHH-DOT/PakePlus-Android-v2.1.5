@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D模型展示 - 湛江陶艺</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 强制隐藏所有加载指示器 */
+        .model-loading-indicator, #loading-indicator {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            z-index: -1 !important;
+        }
+    </style>
+    <!-- 不再需要Three.js库，因为使用iframe嵌入3D模型 -->
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>湛江陶艺</h1>
+                <p>非遗传承</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="3d-model.html" class="active">3D模型展示</a></li>
+                <li><a href="making-process.html">陶艺制作</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+                <li><a href="gallery.html">作品画廊</a></li>
+                <li><a href="chat-agent.html">智能聊天</a></li>
+                <li><a href="features.html">功能介绍</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 3D模型展示区 -->
+    <section id="3d-model-section">
+        <div class="container">
+            <h2>3D模型展示</h2>
+            <div class="model-container">
+                <div class="model-display">
+                    <!-- 3D模型展示框 -->
+                    <div class="model-frame">
+                        <!-- 科技感装饰线 -->
+                        <div class="frame-decoration top-left"></div>
+                        <div class="frame-decoration top-right"></div>
+                        <div class="frame-decoration bottom-left"></div>
+                        <div class="frame-decoration bottom-right"></div>
+                        <!-- 模型容器 -->
+                        <div class="model-container-inner">
+                            <iframe id="pottery-model" src="月饼盒.html" style="width:100%; height:100%; border:none;"></iframe>
+                            <!-- 坐标指示器 -->
+                            <div class="coordinate-indicator">
+                                <div class="axis x">X</div>
+                                <div class="axis y">Y</div>
+                                <div class="axis z">Z</div>
+                            </div>
+                            <!-- 模型加载状态指示器 -->
+                            <div class="model-loading-indicator" id="loading-indicator">
+                                <div class="loading-spinner"></div>
+                                <div class="loading-text">正在加载模型...</div>
+                                <div class="loading-progress" id="loading-progress">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 状态显示 -->
+                    <div class="model-status">
+                        <div class="status-item">
+                            <span class="label">缩放:</span>
+                            <span class="value" id="zoom-value">100%</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">旋转:</span>
+                            <span class="value" id="rotation-value">0°</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 控制面板 -->
+                <div class="model-controls">
+                    <h3>模型控制</h3>
+                    <div class="control-group">
+                        <div class="control-row">
+                            <button id="zoom-in" class="control-btn">
+                                <span class="icon">🔍+</span>
+                                <span class="text">放大</span>
+                            </button>
+                            <button id="zoom-out" class="control-btn">
+                                <span class="icon">🔍-</span>
+                                <span class="text">缩小</span>
+                            </button>
+                        </div>
+                        <div class="control-row">
+                            <button id="rotate" class="control-btn">
+                                <span class="icon">🔄</span>
+                                <span class="text">自动旋转</span>
+                            </button>
+                            <button id="reset" class="control-btn">
+                                <span class="icon">🔁</span>
+                                <span class="text">重置</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="interaction-guide">
+                        <h4>交互说明</h4>
+                        <ul>
+                            <li><strong>鼠标拖拽:</strong> 旋转模型</li>
+                            <li><strong>滚轮:</strong> 缩放模型</li>
+                            <li><strong>键盘方向键:</strong> 平移模型</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 详细介绍区 -->
+    <section class="detailed-intro">
+        <div class="container">
+            <h2>湛江陶艺详细介绍</h2>
+            <div class="intro-sections">
+                <div class="intro-section">
+                    <h3>历史沿革</h3>
+                    <p>湛江陶艺起源于唐宋时期，至今已有超过一千年的历史。据考古发现，湛江地区在唐代就已经有了较为成熟的制陶工艺。到了明清时期，湛江陶艺达到了鼎盛阶段，产品远销东南亚各国。</p>
+                    <p>湛江陶艺的发展与当地的地理环境和文化传统密切相关。湛江地区拥有丰富的优质陶土资源，为陶艺制作提供了得天独厚的条件。同时，湛江作为海上丝绸之路的重要节点，促进了陶艺文化的交流与发展。</p>
+                </div>
+                <div class="intro-section">
+                    <h3>艺术特点</h3>
+                    <p>湛江陶艺以其独特的艺术风格和精湛的制作工艺而闻名。其主要特点包括：</p>
+                    <ul>
+                        <li><strong>造型多样：</strong>从日常用品到艺术摆件，湛江陶艺的造型丰富多样，满足不同的使用和观赏需求。</li>
+                        <li><strong>色彩鲜明：</strong>采用天然矿物颜料，色彩鲜艳持久，具有浓郁的地方特色。</li>
+                        <li><strong>工艺精湛：</strong>经过拉坯、修坯、绘画、上釉、烧制等多个环节，每个环节都需要工匠的精心制作。</li>
+                        <li><strong>文化内涵丰富：</strong>湛江陶艺作品常常蕴含着当地的历史故事、民间传说和生活智慧，具有深厚的文化底蕴。</li>
+                    </ul>
+                </div>
+                <div class="intro-section">
+                    <h3>制作工艺</h3>
+                    <p>湛江陶艺的制作工艺复杂精细，主要包括以下几个步骤：</p>
+                    <ol>
+                        <li><strong>采土：</strong>选取优质的陶土原料，经过筛选、沉淀等处理。</li>
+                        <li><strong>拉坯：</strong>将陶土放在轮车上，通过手工拉制出基本形状。</li>
+                        <li><strong>修坯：</strong>对拉制好的坯体进行修整，使其更加光滑和规整。</li>
+                        <li><strong>绘画：</strong>在坯体上绘制各种图案和装饰。</li>
+                        <li><strong>上釉：</strong>为坯体涂上釉料，增加光泽和保护作用。</li>
+                        <li><strong>烧制：</strong>将上釉后的坯体放入窑中烧制，温度高达1200℃以上。</li>
+                    </ol>
+                </div>
+                <div class="intro-section">
+                    <h3>传承与发展</h3>
+                    <p>作为国家级非物质文化遗产，湛江陶艺的传承与发展受到了高度重视。近年来，当地政府和文化部门采取了一系列措施，包括：</p>
+                    <ul>
+                        <li>建立非遗传承基地，培养新一代传承人。</li>
+                        <li>举办陶艺展览和比赛，提高湛江陶艺的知名度。</li>
+                        <li>将陶艺文化融入学校教育，让更多年轻人了解和喜爱湛江陶艺。</li>
+                        <li>利用现代科技手段，如3D建模、数字化展示等，创新传承方式。</li>
+                    </ul>
+                    <p>通过这些努力，湛江陶艺正在焕发出新的生机与活力，走向更加广阔的世界舞台。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 南粤匠心--3d数字驱动下的湛江非遗陶艺传承. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Coze聊天SDK -->
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+    <script>
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7585550236161064996',
+        },
+        componentProps: {
+          title: 'Coze',
+        },
+        auth: {
+          type: 'token',
+          token: 'pat_jZCBnds2Bvt8troPDdHlPls5mCCw1Tj981PWjUWq2AQRGN7G11KWRepx5gS0egpU',
+          onRefreshToken: function () {
+            return 'pat_jZCBnds2Bvt8troPDdHlPls5mCCw1Tj981PWjUWq2AQRGN7G11KWRepx5gS0egpU'
+          }
+        }
+      });
+    </script>
+</body>
+</html>
